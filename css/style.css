@@ -49,6 +49,7 @@ body {
 .heading-priamry {
   color: #fff;
   text-transform: uppercase;
+  backface-visibility: hidden;
 }
 .heading-primary-main {
   display: block;
