@@ -12,7 +12,11 @@ Dark green: #28b485
   box-sizing: border-box;
 }
 html {
-  font-size: 10px;
+  font-size: 62.5%;
+  /* 
+  16px = 1rem
+  10px = 0.625rem
+  */
 }
 body {
   font-family: "Lato", sans-serif;
