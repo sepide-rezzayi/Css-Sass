@@ -153,3 +153,6 @@ body {
 
   transform: scaleX(1.4) scaleY(1.6);
 }
+.btn-animation {
+  animation: moveInBottom 0.5s ease-out 0.3s backwards;
+}
