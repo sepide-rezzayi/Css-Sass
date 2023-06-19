@@ -56,24 +56,22 @@ body {
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden; }
-
-.heading-primary-main {
-  display: block;
-  font-weight: 400;
-  font-size: 6rem;
-  letter-spacing: 3.5rem;
-  animation-name: moveInLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-out; }
-
-.heading-primary-sub {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 1.74rem;
-  animation-name: moveInRight;
-  animation-duration: 1s;
-  animation-timing-function: ease-out; }
+  .heading-priamry-main {
+    display: block;
+    font-weight: 400;
+    font-size: 6rem;
+    letter-spacing: 3.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
+  .heading-priamry-sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.74rem;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
 
 @keyframes moveInLeft {
   0% {
@@ -118,6 +116,9 @@ body {
 .btn:hover {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   transform: translateY(-0.3rem); }
+  .btn:hover::after {
+    opacity: 0;
+    transform: scaleX(1.4) scaleY(1.6); }
 
 .btn:active {
   transform: translateY(-0.1rem);
@@ -126,6 +127,8 @@ body {
 .btn-white {
   background-color: #fff;
   color: #777; }
+  .btn-white::after {
+    background-color: #fff; }
 
 .btn::after {
   content: "";
@@ -138,9 +141,6 @@ body {
   border-radius: 10rem;
   transition: all 0.4s;
   z-index: -1; }
-
-.btn-white::after {
-  background-color: #fff; }
 
 .btn:hover::after {
   opacity: 0;
