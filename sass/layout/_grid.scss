@@ -26,8 +26,30 @@
       margin-right: $gutter-horizontal;
     }
   }
+  .col-2-of-3 {
+    width: calc(
+      2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal}
+    );
+    // نگاه کن اومده اون یه قسمت از سه تا قسمت رو ضزب در 2 کرده که بشه دوتا قسمت از سه تا قسمت بعد امده با فاصله بینشون جمع کرده
+    background-color: rebeccapurple;
+    float: left;
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+  }
   .col-1-of-4 {
-    width: calc((100% -3 * #{$gutter-horizontal}) / 4);
+    width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+    background-color: red;
+    float: left;
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+  }
+
+  .col-1-of-4 {
+    width: calc(
+      (2 * (100% - 3 * #{$gutter-horizontal}) / 4) + 2 *#{$gutter-horizontal}
+    );
     background-color: red;
     float: left;
     &:not(:last-child) {
